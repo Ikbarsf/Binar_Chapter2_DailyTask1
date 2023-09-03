@@ -4,10 +4,17 @@
 // Petunjuk
 // Cukup lakukan operasi aritmatika biasa.
 
+
 function solution(x,y) {
     // tulis jawabanmu disini
-
+    // membuat perkondisian dimana jika yang diambil (x) harus kelipatan 5 
+    if (x%5===0){
+        // membuat variabel result yang menyimpan hasil hitung dari saldo dikurangi jumlah yang diambil dan 0.5
+        const result = y - x - 0.5
+        return result
+    }
+    return y
 }
 
-console.log(solution(30,20)) // expected output 89.5
+console.log(solution(30,120)) // expected output 89.5
 console.log(solution(42,100)) // expected output 100

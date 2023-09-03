@@ -5,7 +5,16 @@
 
 function solution(str) {
     // tulis jawabanmu disini
-
+    let result = []
+    for (let i in str){
+        if(str[i] == '.'){
+            let change = str[i].replace('.', '()')
+            result += change
+        } else{
+            result += str[i]
+        }
+    }
+    return result
 }
 
 console.log(solution("1.1.1.1")) // expected output 1()1()1()1()
